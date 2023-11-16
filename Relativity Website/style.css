@@ -1,0 +1,344 @@
+body{
+  margin:0px;
+}
+/*navigatie*/
+.img0{
+  padding: 5px 0px 0px 50px;
+  height:30px;
+  width:30px;
+  float:left;
+}
+.topnav h1{
+   font-family: 'Gill Sans MT';
+   font-size: 16px;
+   float:left;
+}
+#site-header {
+  position: fixed;
+  height: 45px;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all .3s ease;
+  box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+#site-header.hide {
+  top: -44px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  font-family:'Gill Sans MT';
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display:block;
+  color: black;
+  text-align: center;
+  padding: 12px 40px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  box-shadow: inset 180px 0 0 0 rgb(245, 233, 4);
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/*navigatie*/
+
+/*meniu*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-indent:250px;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Gill Sans MT';
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgb(245, 233, 4);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 45px;
+  font-size: 60px;
+}
+span{
+  float: right;
+  display:block;
+  text-align: center;
+  padding: 11px 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0,0,0);
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:'Gill Sans MT';
+}
+span:hover{
+  color: rgb(245, 233, 4);
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*meniu*/
+
+/*main*/
+
+.main0{
+  height:400px;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size: contain;
+}
+.emc{
+  float:right;
+  position:relative;
+  top:100px;
+  right:100px;
+  padding:50px;
+  
+}
+.emc h1{
+  color:white;
+  font-family:'Franklin Gothic Medium';
+  font-size:50px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(255, 255, 0)
+}
+.emc1{
+  float:left;
+  position:relative;
+  padding:0px 400px 0px 140px;
+}
+.emc1 p{
+  font-family:Georgia;
+  font-size:20px;
+  line-height: 1.5;
+}
+.emc1 li{
+  font-family:Georgia;
+  font-size:20px;
+  line-height: 1.5;
+}
+.emc1 li:hover{
+  text-decoration:none;
+}
+img {
+  padding: 80px;
+  width:500px;
+}
+.main1{
+  height:500px;
+  background-color: rgb(255, 255, 255);
+}
+.main2{
+  background-image: url("Auxiliare/Albert-Einstein-Wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  background-size: cover;
+  height:700px;
+}
+.main2g{
+  background-image: url("Auxiliare/gaura.jpg");
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  background-size: cover;
+  height:700px;
+}
+.main2s{
+  background-image: url("Auxiliare/star-wars.jpg");
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  background-size: cover;
+  height:700px;
+}
+.main3{
+  height:1000px;
+  background-color: rgb(255, 255, 255);
+}
+.mainb{
+  background-image: url("Auxiliare/space.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:1000px;
+}
+.bibliografie{
+  font-family: 'Gill Sans MT';
+  font-size: 20px;
+  color:white;
+  padding:55px;
+}
+.bibliografie p{
+  font-family: 'Gill Sans MT';
+  font-size: 20px;
+  color:white;
+}
+.bibliografie a{
+  font-family: 'Gill Sans MT';
+  font-size: 20px;
+  color:white;
+  text-decoration: none;
+}
+.bibliografie li{
+  font-family: 'Gill Sans MT';
+  font-size: 20px;
+  color:white;
+}
+.bibliografie li:hover{
+  text-decoration: none;
+}
+.bibliografie a:hover{
+  color:rgb(255, 255, 0);
+  text-decoration: none;
+}
+
+/*main*/
+
+/*footer*/
+footer {
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  width:100%;
+  position:relative;
+  bottom:0;
+  left:0;
+  text-align: center;
+  color: white;
+}
+#info{
+  height:430px;
+  color:#fff;
+}
+.myUL{
+  text-align:left;
+  display:block;
+  padding:25px 0px 0px 100px;
+  float:left;
+}
+#myFoot{
+  height: 40x;
+  display:block;
+  position:absolute;
+  bottom:0px;
+}
+h2{
+  font-family: 'Gill Sans MT';
+  font-size: 16px;
+  float:left;
+}
+.img1{
+  padding: 0px 0px 0px 100px;
+  height:30px;
+  width:30px;
+  float:left;
+}
+.copy{
+  font-family:'Franklin Gothic Medium';
+  color:grey;
+  font-size:14px;
+  display:block;
+  padding:10px 0px 0px 400px;
+}
+li{
+  margin:10px;
+  font-family:'Franklin Gothic Medium';
+  font-size:12px;
+}
+.li1{
+  margin:10px;
+  font-family:'Gill Sans MT';
+  font-size:15px;
+}
+.li1:hover{
+  text-decoration:none;
+}
+li:hover{
+  text-decoration: underline;
+}
+.fa {
+  padding: 13px;
+  font-size: 10px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.fa:hover {
+  color: rgb(245, 233, 4);
+}
+.biblio{
+   font-family:'Franklin Gothic Medium';
+   color:white;
+}
+/*footer*/
